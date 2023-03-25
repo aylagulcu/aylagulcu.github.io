@@ -20,8 +20,8 @@
 /* Colors */
 :root {
   --color-default: #2b180d; 
-  --color-primary: #311fd8; /* 56b8e6 */
-  --color-secondary: #0d1440; /* 1b2f45 */
+  --color-primary: rgba(49, 31, 216, 0.9); /* #311fd8; /* 56b8e6 */
+  --color-secondary: rgba(13, 20, 64, 0.9);    /*#0d1440; /* 1b2f45 */
 }
 
 /* Smooth scroll behavior */
@@ -292,7 +292,7 @@ section {
     font-family: var(--font-default);
     font-size: 15px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-secondary); /* rgba(255, 255, 255, 0.6);*/
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -308,7 +308,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: var(--color-primary); /* #fff;*/
   }
 
   .navbar .dropdown ul {
@@ -454,7 +454,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--color-primary);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -508,7 +508,7 @@ section {
     position: absolute;
     content: "";
     width: 40%;
-    background: var(--color-secondary);
+    background: #0d1440; /*var(--color-secondary);*/
     top: 0;
     bottom: 0;
   }
